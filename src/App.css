@@ -1,0 +1,40 @@
+.App {
+  max-width: 830px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 45px 0;
+}
+
+h1 {
+  margin: 10px 0 20px;
+  text-align: left;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  height: 80%;
+}
+
+@media screen and (max-width: 550px) {
+  .App {
+    max-width: 90vw;
+  }
+  .header {
+    margin-top: 20px;
+  }
+  h1 {
+    font-size: 25px;
+    margin: 0;
+  }
+
+  .game-board {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
